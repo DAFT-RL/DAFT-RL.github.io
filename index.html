@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Learning Dynamic Attribute-factored World Models for Efficient Multi-object Reinforcement Learning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,28 +52,26 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Learning Dynamic Attribute-factored World Models for Efficient Multi-object Reinforcement Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Fan Feng</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="https://saramagliacane.github.io/" target="_blank">Sara Magliacane</a></span>
+                  
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">
+                      City University of Hong Kong, University of Amsterdam, MIT-IBM Watson AI Lab<br><strong>NeurIPS 2023</strong></span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://openreview.net/pdf?id=bsNslV3Ahe" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +80,31 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
+                     <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2307.09205" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                    <!-- Poster PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://daft-rl.github.io" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Poster</span>
                     </a>
                   </span>
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://daft-rl.github.io" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,16 +113,7 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+               
             </div>
           </div>
         </div>
@@ -123,23 +123,6 @@
 </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -148,7 +131,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            In many reinforcement learning tasks, the agent has to learn to interact with many objects of different types and generalize to unseen combinations and numbers of objects. Often a task is a composition of previously learned tasks (e.g. block stacking). These are examples of compositional generalization, in which we compose object-centric representations to solve complex tasks. Recent works have shown the benefits of object-factored representations and hierarchical abstractions for improving sample efficiency in these settings. On the other hand, these methods do not fully exploit the benefits of factorization in terms of object attributes. In this paper, we address this opportunity and introduce the Dynamic Attribute FacTored RL (DAFT-RL) framework. In DAFT-RL, we leverage object-centric representation learning to extract objects from visual inputs. We learn to classify them in classes and infer their latent parameters. For each class of object, we learn a class template graph that describes how the dynamics and reward of an object of this class factorize according to its attributes. We also learn an interaction pattern graph that describes how objects of different classes interact with each other at the attribute level. Through these graphs and a dynamic interaction graph that models the interactions between objects, we can learn a policy that can then be directly applied in a new environment by just estimating the interactions and latent parameters. We evaluate DAFT-RL in three benchmark datasets and show our framework outperforms the state-of-the-art in generalizing across unseen objects with varying attributes and latent parameters, as well as in the composition of previously learned tasks.
           </p>
         </div>
       </div>
@@ -157,128 +140,186 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Dynamic, attributed-factored MDPs (DAFT-MDPs)</h2>
+        <div class="content has-text-justified">
+          <p>
+            </p><div class="columns  is-four-fifths is-centered has-text-centered">
+              <div class="column">
+                <img src="static/images/graphical_rep.png" alt="Graphical Representation" style="max-width: 100%; height: auto;">
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+        
+                <div class="column">
+                  <div class="content has-text-justified">
+                    <p>
+                      <b>Figure 1</b> The graphical representation of DAFT-MDP. The colors denote the attributes for an object or a class, the red dashed lines denote edges that can be switched on or off at different timesteps.
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          <p></p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Learning Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            </p><div class="columns  is-four-fifths is-centered has-text-centered">
+              <div class="column">
+                <img src="static/images/pipeline.png" alt="Learning Framework" style="max-width: 100%; height: auto;">
+
+              
+               
+
+              </div>
+
+            </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Experimental Results</h2>
+        <h3 class="title is-4">Main Results</h3>
+        <div class="content has-text-justified">
+          <p>
+            </p><div class="columns  is-four-fifths is-centered has-text-centered">
+              <div class="column">
+                <img src="static/images/tab1.png" alt="Experiment" style="max-width: 100%; height: auto;">
 
 
+                <div class="column">
+                  <div class="content has-text-justified">
+                    <p>
+                      <b>Table 1</b> Average success rate over 3 random seeds for Push & Switch compositional generalization in terms of combination of skills (S), changing number of objects (O), and changing latent parameters (L) with respect to training. The numbers in bold highlight the top-performing method.
+                    </p>
+                  </div>
+                </div>
+
+                <br>
+                <br>
+
+                <div class="column">
+                  <img src="static/images/tab2.png" alt="Experiment" style="max-width: 100%; height: auto;">
+
+                
+
+                  <div class="column">
+                    <div class="content has-text-justified">
+                      <p>
+                        <b>Table 2</b> Average success rate over 3 random seeds for Spriteworld with unseen object numbers, color and shape combinations. The numbers in bold highlight the top-performing method.
+                      </p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <br>
+
+                  <div class="column">
+                    <img src="static/images/tab3.png" alt="Experiment" style="max-width: 100%; height: auto;">
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <div class="column">
+                      <div class="content has-text-justified">
+                        <p>
+                          <b>Table 3</b> Average success rate over 3 random seeds for Block-stacking with unseen object numbers
+                          0.4 and mass combinations. The numbers in bold highlight the top-performing method.
+                        </p>
+                      </div>
+                    </div>
+
+                    <br>
+                    <br>
+
+                    <div class="column">
+                      <img src="static/images/fig2.png" alt="Experiment" style="max-width: 100%; height: auto;">
+
+                    
+                      <div class="column">
+                        <div class="content has-text-justified">
+                          <p>
+                            <b>Figure 2</b> 
+                            A. The smoothed learning curve for 2-Push + 2-Switch (L+S) with different friction coefficients for each object (for clarity, we show only the top three methods in terms of the success rate); B. The smoothed learning curve for the object comparison task in Spriteworld with unseen object numbers, combinations of colors and shapes (for clarity, we show only the top three methods in terms of the success rate); C. Success rate versus number of blocks in the stacking task, where each block has distinct mass.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                <p></p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+        <h3 class="title is-4">Ablation Studies</h3>
+        <div class="column">
+          <img src="static/images/ab1.png" alt="Experiment" style="max-width: 50%; height: auto;">
+          <div class="column">
+            <div class="content has-text-centered">
+              <p>
+                <b>Figure 3</b> 3-Push+3-Switch task.</p>
+            </div>
+          </div>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
+
+        <div class="column">
+          <img src="static/images/ab2.png" alt="Experiment" style="max-width: 100%; height: auto;">
+          <div class="column">
+            <div class="content has-text-justified">
+              <p>
+                <b>Figure 4</b> Quality of learned graphs w.r.t. the number of samples for 3-Push + 3-Switch (L+O+S). We plot the success rate of the RL task, the 
+                <span id="MJXc-Node-125" class="mjx-msubsup">
+                  <span class="mjx-base" style="margin-right:-0.188cm;">
+                    <span id="MJXc-Node-126" class="mjx-mi">
+                      <span class="mjx-char MJXc-TeX-math-BI" style="padding-top: 0.467em; padding-bottom: 0.313em; padding-right: 0em;">R</span>
+                    </span>
+                  </span>
+                  <span class="mjx-sup" style="font-size: 70.7%; vertical-align: 0.513em; padding-left: 0.041em; padding-right: 0.071em;">
+                    <span id="MJXc-Node-127" class="mjx-texatom" style="">
+                        <span class="mjx-char MJXc-TeX-main-R" style="padding-top: 0.003em; padding-bottom: 0.313em;">2</span>
+                    </span>
+                  </span>
+                </span>
+              </span>
+                coefficient for learned representation vs the true latent parameters, and normalized Structured Hamming Distance (nSHD) between the learned graph and true graph under different number of training samples (measured as a ratio with the ones in the main paper) for (a) data collected by random policy, and (b) data collected by pre-trained policy.</p>
+            </div>
+          </div>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
         
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
+      </div></div></div></section>
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@inproceedings{
+        feng2023learning,
+        title={Learning Dynamic Attribute-factored World Models for Efficient Multi-object Reinforcement Learning},
+        author={Fan Feng and Sara Magliacane},
+        booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+        year={2023},
+        url={https://openreview.net/forum?id=bsNslV3Ahe}
+        }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -292,7 +333,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
